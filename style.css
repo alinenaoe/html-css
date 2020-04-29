@@ -1,6 +1,13 @@
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.5;
+    text-decoration-color: darkgray;
+}
+
+a {
+    color: black;
 }
 
 body {
@@ -9,19 +16,53 @@ body {
 }
 
 .container {
-    padding: 10%;
+    padding: 8%;
 }
 
 .slide {
     height: 100vh;
+    position: relative;
 }
 
 .slide-a {
-    background-color: #BEF2E6;    
+    background-color: #f0d5d5;  
 }
 
 .slide-b {
-    background-color: #FFF8E7;
+    background-color: #e8e8e8;
+}
+
+.controls {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.controls a {
+    color: #7d7b79;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.code p {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.code {
+    margin-top: 40px;
 }
 
 .img-slide {

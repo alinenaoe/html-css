@@ -31,10 +31,11 @@
             <li>Definição na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>:
                 <p>"HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web [...] 'Hipertexto' refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web."</p>  
             </li>
-            <li>Exemplo:</li> 
-            <p>
-                <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>
-            </p>            
+            <li>Exemplo: 
+                <p>
+                    <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>
+                </p>     
+            </li>       
         </ul>
         <div class="controls">        
             <a href="#intro">Voltar para o início</a> | <a href="#exemplo-sem-css">Próximo</a>
@@ -48,21 +49,22 @@
         </div>
     </section>
 
-    <section class="slide slide-b container code" id="html-2">
+    <section class="slide slide-b container" id="html-2">
         <h3>Mas como é um código HTML?</h3>
         <p>Esta é a estrutura básica que você irá encontrar em todos os documentos HTML:</p>
-        <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
-        <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
-        <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página" class="tab-1">&lt;head&gt;</p>
-        <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-2">&lt;title&gt;</p>
-        <p title="Esta tag indica o fim do cabeçalho" class="tab-1">&lt;/head&gt;</p>
-        <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro" class="tab-1">&lt;body&gt;</p>
-        <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 ">&lt;h1&gt;</p>
-        <p title="Fechamento da tag h1" class="tab-2">&lt;/h1&gt;</p>
-        <p title="P é um parágrafo, para colocar um texto comum" class="tab-2">&lt;p&gt;</p>
-        <p title="Fechamento da tag p">&lt;/p&gt;</p>
-        <p title="Fechamento do body do documento">&lt;/body&gt;</p>
-        <p title="Fechamento do documento">&lt;/html&gt;</p>
+
+        <div class="code">
+            <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
+            <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
+            <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página" class="tab-1">&lt;head&gt;</p>
+            <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-2">&lt;title&gt;Título da sua página na aba do navegador&lt;/title&gt;</p>
+            <p title="Esta tag indica o fim do cabeçalho" class="tab-1">&lt;/head&gt;</p>
+            <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro" class="tab-1">&lt;body&gt;</p>
+            <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 " class="tab-2">&lt;h1&gt; Sou um título&lt;/h1&gt;</p>
+            <p title="P é um parágrafo, para colocar um texto comum" class="tab-2">&lt;p&gt;Sou um parágrafo&lt;/p&gt;</p>
+            <p title="Fechamento do body do documento" class="tab-1">&lt;/body&gt;</p>
+            <p title="Fechamento do documento">&lt;/html&gt;</p>
+        </div>
         <div class="controls">        
             <a href="#intro">Voltar para o início</a> | <a href="#exemplo-sem-css">Anterior</a> | <a href="#html-3">Próximo</a>
         </div>
@@ -80,7 +82,7 @@
         </div>
     </section>
 
-    <section class="slide slide-a container" id="html-4">
+    <section class="slide slide-b container" id="html-4">
         <h3>Estrutura de uma tag</h3>
 
         <p>&lt;section class="tema" id="estrutura-tag"&gt;</p>
@@ -92,7 +94,7 @@
         </div>
     </section>
 
-    <section class="slide slide-b container" id="css">
+    <section class="slide slide-a container" id="css">
         <h2>Introdução ao CSS</h2>
         <ul>
             <li>É a sigla para Cascading Style Sheets</li>
@@ -104,24 +106,26 @@
         </div>
     </section>
 
-    <section class="slide slide-a container" id="css-2"> 
+    <section class="slide slide-b container" id="css-2"> 
         <h3>Mas como é um código CSS?</h3>
         <p>Para estilizar um HTML, é preciso "chamá-los" pelo CSS e dizer quais são as propriedades:</p>
-        <p title="este é um seletor, ou seja, qual elemento do HTML você quer chamar">body {</p>
-            <p title="background-color é uma propriedade e o valor dela, neste caso, é red" class="tab-1">background-color:red</p>
-        <p>}</p>
-        <p>.nome-da-classe {</p>
-            <p class="tab-1">font-family: 'Lato', sans-serif;</p>
-        <p>}</p>
-        <p>#nome-da-ID {</p>
-            <p class="tab-1">margin-top: 20px</p>
-        <p>}</p>
+            <div class="code">
+            <p title="este é um seletor, ou seja, qual elemento do HTML você quer chamar">body {</p>
+                <p title="background-color é uma propriedade e o valor dela, neste caso, é red" class="tab-1">background-color:red</p>
+            <p>}</p>
+            <p>.nome-da-classe {</p>
+                <p class="tab-1">font-family: 'Lato', sans-serif;</p>
+            <p>}</p>
+            <p>#nome-da-ID {</p>
+                <p class="tab-1">margin-top: 20px</p>
+            <p>}</p>
+        </div>
         <div class="controls">        
             <a href="#intro">Voltar para o início</a> | <a href="#css">Anterior</a> | <a href="#css-3">Próximo</a>
         </div>
     </section>
 
-    <section class="slide slide-b container">
+    <section class="slide slide-a container" id="css-3">
         <h3>O que dá para fazer com CSS?</h3>
         <ul>
             <li>Posicionar elementos</li>
@@ -130,17 +134,23 @@
             <li>Restringir o tamanho de um bloco ou imagem</li>
             <li>Adaptar sua página para a visualização em dispositivos móveis</li>
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#css-2">Anterior</a> | <a href="#codigo">Próximo</a>
+        </div>
     </section>
 
-    <section class="slide slide-a container" id="codigo">
+    <section class="slide slide-b container" id="codigo">
         <h2>Como desenvolver código?</h2>
         <ul>
             <li>Do que você precisa (por enquanto): um computador e um bloco de notas</li>
             <li>Para facilitar a vida, tenha um editor de texto: Atom, VSCode, Sublime Text ou outros</li>
             <li>Extensões: para deixar do jeito que você gosta</li>
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#codigo">Anterior</a> | <a href="#mao-na-massa">Próximo</a>
+        </div>
     </section>
-    <section class="slide slide-b container" id="mao-na-massa">
+    <section class="slide slide-a container" id="mao-na-massa">
         <h2>Mão na massa</h2>
         <ul>
             <li>Abra o bloco de notas e salve o arquivo com o nome index.htlm em uma pasta na sua máquina</li>
@@ -150,8 +160,11 @@
             <li>Agora abra o arquivo index.html no seu navegador</li>
             <li>Você criou a sua primeira página! :)</li>
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#codigo">Anterior</a> | <a href="#ideias">Próximo</a>
+        </div>
     </section>
-    <section class="slide slide-a container" id="ideias">
+    <section class="slide slide-b container" id="ideias">
         <h2>Ideias</h2>
         <h3>Propostas que podem ser realizadas apenas com HTML e CSS</h3>
         <ul>
@@ -162,18 +175,23 @@
             <li>Currículo / página pessoal</li>
             <li>Wikipedia</li>
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#ideias">Anterior</a> | <a href="#extras">Próximo</a>
+        </div>
     </section>
-    <section class="slide slide-b container" id="extras">
+    <section class="slide slide-a container" id="extras">
         <h2>Extras</h2>
         <ul>
             <li><a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML" target="_blank">Quiz sobre HTML</a></li>
             <li>As cores no CSS: <a href="https://www.w3schools.com/colors/colors_picker.asp">escolha a sua</a></li>
             <li>Inspecione: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/ferramentas_de_desenvolvimento_do_navegador">seu navegador te ajuda a programar!</a></li>
             <li>Acesse o <a href="#">código dessa aula</a></li>
-            <li>Me mande um e-mail:<a href="mailto:alinenaoe@gmail.com">alinenaoe@gmail.com</a></li>
+            <li>Me mande um e-mail: <a href="mailto:alinenaoe@gmail.com">alinenaoe@gmail.com</a></li>
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#ideias">Anterior</a>
+        </div>
     </section>
-
 
 </body> 
 </html>
