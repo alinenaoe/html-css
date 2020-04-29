@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML e CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="slide container" id="intro">
+        <h1>Sobre o que vamos conversar hoje?</h1>
+        <ul>
+            <li><a href="#site">O que é um site?</a></li>
+            <li><a href="#html">Introdução ao HTML</a></li>
+            <li><a href="#css">Introdução ao CSS</a></li>
+            <li><a href="#codigo">Como desenvolver código?</a></li>
+            <li><a href="#mao-na-massa">Mão na massa/a></li>
+            <li><a href="#pesquisar">Onde pesquisar</a></li>
+            <li><a href="#ideias">Ideias</a></li>
+            <li><a href="#extras">Extras</a></li>
+        </ul>
+    </section>
+    <section class="slide slide-b container" id="site">
+        <h2>O que é um site</h2>
+
+    </section>
+    <section class="slide slide-a container" id="html">
+        <h2>Introdução ao HTML</h2>
+        <ul>
+            <li>É a sigla para HyperText Markup Language</li>
+            <li>"Esqueleto" de qualquer página da web</li>
+            <li>Definição na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>:
+                <p>"HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web [...] 'Hipertexto' refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web."</p>  
+            </li>
+            <li>Exemplo:</li> 
+            <p>
+                <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>
+            </p>            
+        </ul>
+    </section>
+    <section class="slide" id="exemplo-sem-css">
+        <img src="img/dh_sem_css.jpg" alt="página da DH Schools apenas com o HTML" class="img-slide">
+    </section>
+
+    <section class="slide slide-b container code">
+        <h3>Mas como é um código HTML?</h3>
+        <p>Esta é a estrutura básica que você irá encontrar em todos os documentos HTML:</p>
+
+        <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
+        <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
+        <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página" class="tab-1">&lt;head&gt;</p>
+        <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-2">&lt;title&gt;</p>
+        <p title="Esta tag indica o fim do cabeçalho" class="tab-1">&lt;/head&gt;</p>
+        <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro" class="tab-1">&lt;body&gt;</p>
+        <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 ">&lt;h1&gt;</p>
+        <p title="Fechamento da tag h1" class="tab-2">&lt;/h1&gt;</p>
+        <p title="P é um parágrafo, para colocar um texto comum" class="tab-2">&lt;p&gt;</p>
+        <p title="Fechamento da tag p">&lt;/p&gt;</p>
+        <p title="Fechamento do body do documento">&lt;/body&gt;</p>
+        <p title="Fechamento do documento">&lt;/html&gt;</p>
+
+        <section class="slide slide-a container">
+            <h2>Introdução ao HTML</h2>
+            <ul>
+                <li>Hierarquia</li>
+                <li>Semântica</li>
+            </ul>
+        </section>
+
+    </section>
+    <section class="slide slide-a container">
+        <h3>Estrutura de uma tag</h3>
+    </section>
+
+    <section class="slide slide-b container" id="css">
+        <h2>Introdução ao CSS</h2>
+    </section>
+    <section class="slide slide-a container"></section>
+
+    <section class="slide slide-b container"></section>
+
+codigo cores -- https://www.w3schools.com/colors/colors_picker.asp
+
+seletor propriedade:valor 
+
+Isto é CSS 
+Isto também!
+
+
+    <section class="slide slide-a container" id="codigo">
+        <h2>Como desenvolver código?</h2>
+        <ul>
+            <li>Do que você precisa (por enquanto): um computador e um bloco de notas</li>
+            <li>Para facilitar a vida, tenha um editor de texto: Atom, VSCode, Sublime Text ou outros</li>
+            <li>Extensões: para deixar do jeito que você gosta</li>
+        </ul>
+    </section>
+    <section class="slide slide-b container" id="mao-na-massa">
+        <h2>Mão na massa</h2>
+        <ul>
+            <li>Abra o bloco de notas e salve o arquivo com o nome index.htlm em uma pasta na sua máquina</li>
+            <li>Escreva a estrutura básica de uma página web que aprendemos com um conteúdo qualquer</li>
+            <li>Agora abra um novo arquivo com o nome style.css e mude a cor de fundo para red</li>
+            <li>No arquivo index.html, faça o link para o seu arquivo css</li>
+            <li>Agora abra o arquivo index.html no seu navegador</li>
+            <li>Você criou a sua primeira página! :)</li>
+        </ul>
+    </section>
+    <section class="slide slide-a container" id="ideias">
+        <h2>Ideias</h2>
+        <h3>Propostas que podem ser realizadas apenas com HTML e CSS</h3>
+        <ul>
+            <li>Portal de notícias</li>
+            <li>Página de uma disciplina</li>
+            <li>Perguntas e respostas</li>
+            <li>Página temática</li>
+            <li>Currículo / página pessoal</li>
+            <li>Wikipedia</li>
+        </ul>
+    </section>
+    <section class="slide slide-b container" id="extras">
+        <h2>Extras</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML" target="_blank">Quiz sobre HTML</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/ferramentas_de_desenvolvimento_do_navegador">Seu navegador te ajuda a programar!</a></li>
+            <li><a href="#">Acesse o código dessa aula</a></li>
+            <li><a href="mailto:alinenaoe@gmail.com">Me mande um e-mail :)</a></li>
+        </ul>
+    </section>
+
+
+</body> 
+</html>

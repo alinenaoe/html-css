@@ -1,0 +1,30 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10%;
+}
+
+.slide {
+    height: 100vh;
+}
+
+.slide-a {
+    background-color: #BEF2E6;    
+}
+
+.slide-b {
+    background-color: #FFF8E7;
+}
+
+.img-slide {
+    width: 100%;
+    margin-top: 5%;
+}
