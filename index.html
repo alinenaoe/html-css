@@ -10,21 +10,19 @@
 <body>
     <section class="slide container" id="intro">
         <h1>Sobre o que vamos conversar hoje?</h1>
-        <ul>
-            <li><a href="#site">O que é um site?</a></li>
-            <li><a href="#html">Introdução ao HTML</a></li>
-            <li><a href="#css">Introdução ao CSS</a></li>
-            <li><a href="#codigo">Como desenvolver código?</a></li>
-            <li><a href="#mao-na-massa">Mão na massa/a></li>
-            <li><a href="#pesquisar">Onde pesquisar</a></li>
-            <li><a href="#ideias">Ideias</a></li>
-            <li><a href="#extras">Extras</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#html">Introdução ao HTML</a></li>
+                <li><a href="#css">Introdução ao CSS</a></li>
+                <li><a href="#codigo">Como desenvolver código?</a></li>
+                <li><a href="#mao-na-massa">Mão na massa/a></li>
+                <li><a href="#pesquisar">Onde pesquisar</a></li>
+                <li><a href="#ideias">Ideias</a></li>
+                <li><a href="#extras">Extras</a></li>
+            </ul>
+        </nav>
     </section>
-    <section class="slide slide-b container" id="site">
-        <h2>O que é um site</h2>
 
-    </section>
     <section class="slide slide-a container" id="html">
         <h2>Introdução ao HTML</h2>
         <ul>
@@ -38,15 +36,21 @@
                 <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>
             </p>            
         </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#exemplo-sem-css">Próximo</a>
+        </div>
     </section>
+
     <section class="slide" id="exemplo-sem-css">
         <img src="img/dh_sem_css.jpg" alt="página da DH Schools apenas com o HTML" class="img-slide">
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#html">Anterior</a> | <a href="#html-2">Próximo</a>
+        </div>
     </section>
 
-    <section class="slide slide-b container code">
+    <section class="slide slide-b container code" id="html-2">
         <h3>Mas como é um código HTML?</h3>
         <p>Esta é a estrutura básica que você irá encontrar em todos os documentos HTML:</p>
-
         <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
         <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
         <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página" class="tab-1">&lt;head&gt;</p>
@@ -59,34 +63,74 @@
         <p title="Fechamento da tag p">&lt;/p&gt;</p>
         <p title="Fechamento do body do documento">&lt;/body&gt;</p>
         <p title="Fechamento do documento">&lt;/html&gt;</p>
-
-        <section class="slide slide-a container">
-            <h2>Introdução ao HTML</h2>
-            <ul>
-                <li>Hierarquia</li>
-                <li>Semântica</li>
-            </ul>
-        </section>
-
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#exemplo-sem-css">Anterior</a> | <a href="#html-3">Próximo</a>
+        </div>
     </section>
-    <section class="slide slide-a container">
+
+    <section class="slide slide-a container" id="html-3">
+        <h3>Características importantes do HTML</h3>
+        <ul>
+            <li>Hierarquia: percebemos a relação entre os elementos por meio de uma indentação correta </li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/Semantica">Semântica</a>: usando tags corretas não só estruturamos código, mas damos significado a ele</li>
+            <li>Exemplos de tags: header, nav, footer</li>
+        </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#html-2">Anterior</a> | <a href="#html-4">Próximo</a>
+        </div>
+    </section>
+
+    <section class="slide slide-a container" id="html-4">
         <h3>Estrutura de uma tag</h3>
+
+        <p>&lt;section class="tema" id="estrutura-tag"&gt;</p>
+        <p>Aqui vai o conteúdo da sua seção. Class é um atributo do elemento section, serve para classificar elementos que tenham algo em comum, por exemplo um estilo ou comportamento. Ou seja, várias seções podem ter a mesma class</p>
+        <p>Já o atributo id foi feito para ser atribuído a apenas um elemento em todo o seu código: ele deve ser único</p>
+        <p>&lt;/section&gt;</p>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#html-3">Anterior</a> | <a href="#css">Próximo</a>
+        </div>
     </section>
 
     <section class="slide slide-b container" id="css">
         <h2>Introdução ao CSS</h2>
+        <ul>
+            <li>É a sigla para Cascading Style Sheets</li>
+            <li>Uma linguagem de folha de estilos que descreve como o os elementos HTML devem se comportar na tela</li>
+            <li>Uma boa prática é criar um arquivo separado do arquivo html, para melhor organização e manutenção do código</li>
+        </ul>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#html-4">Anterior</a> | <a href="#css-2">Próximo</a>
+        </div>
     </section>
-    <section class="slide slide-a container"></section>
 
-    <section class="slide slide-b container"></section>
+    <section class="slide slide-a container" id="css-2"> 
+        <h3>Mas como é um código CSS?</h3>
+        <p>Para estilizar um HTML, é preciso "chamá-los" pelo CSS e dizer quais são as propriedades:</p>
+        <p title="este é um seletor, ou seja, qual elemento do HTML você quer chamar">body {</p>
+            <p title="background-color é uma propriedade e o valor dela, neste caso, é red" class="tab-1">background-color:red</p>
+        <p>}</p>
+        <p>.nome-da-classe {</p>
+            <p class="tab-1">font-family: 'Lato', sans-serif;</p>
+        <p>}</p>
+        <p>#nome-da-ID {</p>
+            <p class="tab-1">margin-top: 20px</p>
+        <p>}</p>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#css">Anterior</a> | <a href="#css-3">Próximo</a>
+        </div>
+    </section>
 
-codigo cores -- https://www.w3schools.com/colors/colors_picker.asp
-
-seletor propriedade:valor 
-
-Isto é CSS 
-Isto também!
-
+    <section class="slide slide-b container">
+        <h3>O que dá para fazer com CSS?</h3>
+        <ul>
+            <li>Posicionar elementos</li>
+            <li>Indicar estilo de fonte, cores e espaçamento entre elementos</li>
+            <li>Mudar o comportamento de um elemento ao passar o mouse, por exemplo</li>
+            <li>Restringir o tamanho de um bloco ou imagem</li>
+            <li>Adaptar sua página para a visualização em dispositivos móveis</li>
+        </ul>
+    </section>
 
     <section class="slide slide-a container" id="codigo">
         <h2>Como desenvolver código?</h2>
@@ -123,9 +167,10 @@ Isto também!
         <h2>Extras</h2>
         <ul>
             <li><a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML" target="_blank">Quiz sobre HTML</a></li>
-            <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/ferramentas_de_desenvolvimento_do_navegador">Seu navegador te ajuda a programar!</a></li>
-            <li><a href="#">Acesse o código dessa aula</a></li>
-            <li><a href="mailto:alinenaoe@gmail.com">Me mande um e-mail :)</a></li>
+            <li>As cores no CSS: <a href="https://www.w3schools.com/colors/colors_picker.asp">escolha a sua</a></li>
+            <li>Inspecione: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/ferramentas_de_desenvolvimento_do_navegador">seu navegador te ajuda a programar!</a></li>
+            <li>Acesse o <a href="#">código dessa aula</a></li>
+            <li>Me mande um e-mail:<a href="mailto:alinenaoe@gmail.com">alinenaoe@gmail.com</a></li>
         </ul>
     </section>
 
