@@ -16,7 +16,6 @@
                 <li><a href="#css">Introdução ao CSS</a></li>
                 <li><a href="#codigo">Como desenvolver código?</a></li>
                 <li><a href="#mao-na-massa">Mão na massa</a></li>
-                <li><a href="#pesquisar">Onde pesquisar</a></li>
                 <li><a href="#ideias">Ideias</a></li>
                 <li><a href="#extras">Extras</a></li>
             </ul>
@@ -31,10 +30,7 @@
             <li>Definição na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>:
                 <p>"HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web [...] 'Hipertexto' refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web."</p>  
             </li>
-            <li>Exemplo: 
-                <p>
-                    <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>
-                </p>     
+            <li>Exemplo: <a href="https://www.digitalhouse.com/br/estacaohack/" target="_blank">página da DH Schools completa</a> / <a href="#exemplo-sem-css">página da DH Schools apenas com o HTML</a>    
             </li>       
         </ul>
         <div class="controls">        
@@ -54,16 +50,22 @@
         <p>Esta é a estrutura básica que você irá encontrar em todos os documentos HTML:</p>
 
         <div class="code">
-            <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
-            <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
-            <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página" class="tab-1">&lt;head&gt;</p>
-            <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-2">&lt;title&gt;Título da sua página na aba do navegador&lt;/title&gt;</p>
-            <p title="Esta tag indica o fim do cabeçalho" class="tab-1">&lt;/head&gt;</p>
-            <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro" class="tab-1">&lt;body&gt;</p>
-            <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 " class="tab-2">&lt;h1&gt; Sou um título&lt;/h1&gt;</p>
-            <p title="P é um parágrafo, para colocar um texto comum" class="tab-2">&lt;p&gt;Sou um parágrafo&lt;/p&gt;</p>
-            <p title="Fechamento do body do documento" class="tab-1">&lt;/body&gt;</p>
-            <p title="Fechamento do documento">&lt;/html&gt;</p>
+            <div class="col-1">
+                <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
+                    <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
+                    <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página">&lt;head&gt;</p>
+                    <p title="Aqui estamos estabelecendo o UTF-8 como padrão de codificação. Ele oferece suporte para vários idiomas" class="tab-1">&lt;meta charset="UTF-8"&gt;</p>
+                    <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-1">&lt;title&gt;Título da sua página na aba do navegador&lt;/title&gt;</p>
+                    <p title="Esta tag indica o fim do cabeçalho">&lt;/head&gt;</p>
+                    <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro">&lt;body&gt;</p>
+                    <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 " class="tab-1">&lt;h1&gt;Sou um título&lt;/h1&gt;</p>
+                    <p title="P é um parágrafo, para colocar um texto comum" class="tab-1">&lt;p&gt;Sou um parágrafo&lt;/p&gt;</p>
+                    <p title="Fechamento do body do documento">&lt;/body&gt;</p>
+                    <p title="Fechamento do documento">&lt;/html&gt;</p>
+            </div>
+            <div class="col-1">
+                <img src="img/paginaHTML.JPG" alt="página renderizada" width="80%">
+            </div>
         </div>
         <div class="controls">        
             <a href="#intro">Voltar para o início</a> | <a href="#exemplo-sem-css">Anterior</a> | <a href="#html-3">Próximo</a>
@@ -75,7 +77,7 @@
         <ul>
             <li>Hierarquia: percebemos a relação entre os elementos por meio de uma indentação correta </li>
             <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossario/Semantica">Semântica</a>: usando tags corretas não só estruturamos código, mas damos significado a ele</li>
-            <li>Exemplos de tags: header, nav, footer</li>
+            <li>Exemplos de tags: header, nav, footer, table</li>
             <li>Documentação: <a href="https://www.w3schools.com/html/" target="_blank">em inglês</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">em português</a></li>
         </ul>
         <div class="controls">        
@@ -85,11 +87,16 @@
 
     <section class="slide slide-b container" id="html-4">
         <h3>Estrutura de uma tag</h3>
+        <div class="code">
+            <p class="tab-2"><b>&lt;p&gt;</b>Sou um parágrafo<b>&lt;/p&gt;</b></p>
+        </div>
+        <p>De maneira geral, as tags têm uma abertura, conteúdo e um fechamento</p>
+        <div class="code">
+            <p class="tab-2"><b>&lt;h2 class="titulo-azul"&gt;</b>Sou um título<b>&lt;/h2&gt;</b></p>
+        </div>
+        <p>As tags também podem ter atributos, ou seja, uma informação a mais sobre aquele elemento. Isso será muito útil na hora de aplicar estilos, por exemplo, uma cor</p>
 
-        <p>&lt;section class="tema" id="estrutura-tag"&gt;</p>
-        <p class="tab-2">Aqui vai o conteúdo da sua seção. Class é um atributo do elemento section, serve para classificar elementos que tenham algo em comum, por exemplo um estilo ou comportamento. Ou seja, várias seções podem ter a mesma class</p>
-        <p class="tab-2">Já o atributo id foi feito para ser atribuído a apenas um elemento em todo o seu código: ele deve ser único</p>
-        <p>&lt;/section&gt;</p>
+
         <div class="controls">        
             <a href="#intro">Voltar para o início</a> | <a href="#html-3">Anterior</a> | <a href="#css">Próximo</a>
         </div>
@@ -110,24 +117,50 @@
 
     <section class="slide slide-b container" id="css-2"> 
         <h3>Mas como é um código CSS?</h3>
-        <p>Para estilizar um HTML, é preciso "chamá-los" pelo CSS e dizer quais são as propriedades:</p>
+        <p>Para estilizar um HTML, é preciso "chamá-los" pelo CSS e dizer quais são as propriedades</p>
             <div class="code">
-            <p title="este é um seletor, ou seja, qual elemento do HTML você quer chamar">body {</p>
-                <p title="background-color é uma propriedade e o valor dela, neste caso, é red" class="tab-1">background-color:red</p>
-            <p>}</p>
-            <p>.nome-da-classe {</p>
-                <p class="tab-1">font-family: 'Lato', sans-serif;</p>
-            <p>}</p>
-            <p>#nome-da-ID {</p>
-                <p class="tab-1">margin-top: 20px</p>
-            <p>}</p>
-        </div>
+                <div class="col-1">
+                    <h4>HTML</h4>
+                    <p title="Esta instrução diz ao seu navegador que você está utilizando a versão mais recente do HTML, que é a 5">&lt;!DOCTYPE html&gt;<p>
+                        <p title="A tag html serve para delimitar seu código. Todas as demais tags devem estar dentro da tag html">&lt;html&gt;<p>
+                        <p title="Head significa cabeça, ou seja, o cabeçalho do seu documento. O conteúdo dentro desta tag não aparece na tela, mas tem informações que seu navegador vai ler para renderizar a página">&lt;head&gt;</p>
+                        <p title="Aqui estamos estabelecendo o UTF-8 como padrão de codificação. Ele oferece suporte para vários idiomas" class="tab-1">&lt;meta charset="UTF-8"&gt;</p>
+                        <p title="Quando você vai abrindo abas no seu navegador, elas estão identificadas com o nome da página. Este nome é definido aqui" class="tab-1">&lt;title&gt;Título da sua página na aba do navegador&lt;/title&gt;</p>
+                        <p class="tab-1">&lt;link rel="stylesheet" href="style.css"&gt;</p>
+                        <p title="Esta tag indica o fim do cabeçalho">&lt;/head&gt;</p>
+                        <p title="Body significa corpo, ou seja, é tudo aquilo que de fato vai aparecer na tela do usuário, então todo o conteúdo da sua página precisa estar aqui dentro">&lt;body&gt;</p>
+                        <p title="A letra H aqui significa heading, ou seja, um título. O número 1 significa que este é o título mais importante da página. Também existem as tags h2, h3...até h6 " class="tab-1">&lt;h1&gt;Sou um título&lt;/h1&gt;</p>
+                        <p title="P é um parágrafo, para colocar um texto comum" class="tab-1">&lt;p&gt;Sou um parágrafo&lt;/p&gt;</p>
+                        <p title="P é um parágrafo, para colocar um texto comum" class="tab-1">&lt;p class="diferente"&gt;Sou um parágrafo diferente&lt;/p&gt;</p>
+                        <p title="Fechamento do body do documento">&lt;/body&gt;</p>
+                        <p title="Fechamento do documento">&lt;/html&gt;</p>
+                </div>
+                <div class="col-1">
+                    <h4>CSS</h4>
+                    <p title="este é um seletor, ou seja, qual elemento do HTML você quer chamar">body {</p>
+                        <p title="background-color é uma propriedade e o valor dela, neste caso, é red" class="tab-1">background-color: yellow;</p>
+                    <p>}</p><br>
+                    <p>.diferente {</p>
+                        <p class="tab-1">font-size: 40px;</p>
+                    <p>}</p><br>
+                </div>
+            </div>
         <div class="controls">        
-            <a href="#intro">Voltar para o início</a> | <a href="#css">Anterior</a> | <a href="#css-3">Próximo</a>
+            <a href="#intro">Voltar para o início</a> | <a href="#css">Anterior</a> | <a href="#exemplo-css">Próximo</a>
         </div>
     </section>
 
-    <section class="slide slide-a container" id="css-3">
+    <section class="slide slide-a container" id="exemplo-css">
+        <div class="code">
+            <div class="col-1"><img src="img/pagina-semCSS.JPG" alt="página apenas com HTML" width="90%"></div>
+            <div class="col-1"><img src="img/pagina-comCSS.JPG" alt="página com o CSS" width="90%"></div>
+        </div>
+        <div class="controls">        
+            <a href="#intro">Voltar para o início</a> | <a href="#css-2">Anterior</a> | <a href="#css-3">Próximo</a>
+        </div>
+    </section>
+
+    <section class="slide slide-b container" id="css-3">
         <h3>O que dá para fazer com CSS?</h3>
         <ul>
             <li>Posicionar elementos</li>
@@ -141,7 +174,7 @@
         </div>
     </section>
 
-    <section class="slide slide-b container" id="codigo">
+    <section class="slide slide-a container" id="codigo">
         <h2>Como desenvolver código?</h2>
         <ul>
             <li>Do que você precisa (por enquanto): um computador e um bloco de notas</li>
@@ -152,7 +185,7 @@
             <a href="#intro">Voltar para o início</a> | <a href="#css-3">Anterior</a> | <a href="#mao-na-massa">Próximo</a>
         </div>
     </section>
-    <section class="slide slide-a container" id="mao-na-massa">
+    <section class="slide slide-b container" id="mao-na-massa">
         <h2>Mão na massa</h2>
         <ul>
             <li>Abra o bloco de notas e salve o arquivo com o nome index.html em uma pasta na sua máquina</li>
@@ -171,7 +204,7 @@
             <a href="#intro">Voltar para o início</a> | <a href="#codigo">Anterior</a> | <a href="#ideias">Próximo</a>
         </div>
     </section>
-    <section class="slide slide-b container" id="ideias">
+    <section class="slide slide-a container" id="ideias">
         <h2>Ideias</h2>
         <h3>Propostas que podem ser realizadas apenas com HTML e CSS</h3>
         <ul>
